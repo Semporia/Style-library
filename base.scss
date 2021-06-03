@@ -1,0 +1,81 @@
+* {
+  -webkit-overflow-scrolling: touch;
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  user-select: text;
+  touch-action: pan-y;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+html {
+  height: 100%;
+  // overflow: hidden;
+}
+
+body {
+  height: 100%;
+  background-color: #f5f5f5;
+  color: #333333;
+}
+
+// 页面字体基础大小
+page {
+  height: 100%;
+  font-size: 28rpx;
+}
+
+img,
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+img {
+  display: block;
+}
+
+iframe {
+  display: none;
+}
+
+#app {
+  height: 100%;
+  font-size: 36upx;
+  word-break: break-all;
+}
+
+// 图片背景基础样式
+.bgi {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+// 强制父级节点边缘裁剪
+.ofhd {
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+// 文字删除线
+.tdlt {
+  text-decoration: line-through;
+}

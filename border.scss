@@ -1,0 +1,103 @@
+@import "./variables.scss";
+
+.b {
+  &-all {
+    border: 2upx solid $c-dd;
+  }
+
+  &-b {
+    border-bottom: 2upx solid $c-ee;
+  }
+
+  &-r {
+    border-right: 2upx solid $c-dd;
+  }
+
+  &-t {
+    border-top: 2upx solid $c-dd;
+  }
+
+  &-l {
+    border-left: 2upx solid $c-dd;
+  }
+
+  &-ts + &-ts {
+    border-top: 2upx solid $c-dd;
+  }
+
+  &-ls + &-ls {
+    border-left: 2upx solid $c-dd;
+  }
+}
+
+.b {
+  &-blue {
+    border: 2upx solid $blue;
+    color: $blue;
+  }
+
+  &-green {
+    border: 2upx solid $green;
+    color: $green;
+  }
+
+  &-yellow {
+    border: 2upx solid $yellow;
+    color: $yellow;
+  }
+
+  &-orange {
+    border: 2upx solid $orange;
+    color: $orange;
+  }
+
+  &-red {
+    border: 2upx solid $red;
+    color: $red;
+  }
+
+  &-99 {
+    border: 2upx solid $c-99;
+    color: $c-99;
+  }
+
+  &-dd {
+    border: 2upx solid $c-dd;
+    color: $c-dd;
+  }
+
+  &-active {
+    border: 2upx solid $active;
+    color: $active;
+  }
+
+  &-none {
+    border: none !important;
+  }
+}
+
+// 定义圆角值，历遍1-1000
+@for $i from 1 through 1000 {
+  .br-#{$i} {
+    border-radius: $i + rpx;
+  }
+}
+
+.br-50p {
+  border-radius: 50%;
+}
+
+.bs {
+  &-all {
+    box-shadow: 2upx 2upx 6upx rgba(0, 0, 0, 0.3), -2upx -2upx 6upx rgba(0, 0, 0, 0.3),
+      2upx -2upx 6upx rgba(0, 0, 0, 0.3), -2upx 2upx 6upx rgba(0, 0, 0, 0.3);
+  }
+
+  &-b {
+    box-shadow: 0px 0px 20rpx 0px rgba(108, 108, 108, 0.2);
+  }
+
+  &-t {
+    box-shadow: -2upx -2upx 6upx rgba(0, 0, 0, 0.3);
+  }
+}

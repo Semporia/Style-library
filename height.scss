@@ -1,0 +1,17 @@
+// 定义高度
+@for $i from 2 through 1000 {
+  .h-#{$i} {
+    height: $i + rpx;
+  }
+}
+
+// 定义高度百分比，遍历1-100
+@for $i from 1 through 100 {
+  .h-#{$i}p {
+    height: $i * 1%;
+  }
+}
+
+.h-none {
+  height: auto !important;
+}

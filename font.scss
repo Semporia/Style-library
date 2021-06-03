@@ -1,0 +1,30 @@
+// 定义字体大小，历遍1-300
+@for $i from 1 through 300 {
+  .f-#{$i} {
+    font-size: $i + rpx;
+  }
+}
+
+.fw {
+  &-small {
+    font-weight: 600;
+  }
+
+  &-medium {
+    font-weight: 700;
+  }
+
+  &-large {
+    font-weight: 800;
+  }
+
+  &-none {
+    font-weight: normal;
+  }
+}
+
+.ts {
+  &-small {
+    text-shadow: 1rpx 1rpx 1rpx #000000;
+  }
+}

@@ -1,0 +1,59 @@
+@mixin transition($time) {
+  will-change: transform;
+  transition: all $time;
+}
+
+@mixin transform($type) {
+  opacity: 0;
+  transform: $type;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  @include transition(0.3s);
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-transform-enter-active,
+.fade-transform-leave-active {
+  @include transition(0.5s);
+}
+
+.fade-transform-enter {
+  @include transform(translateX(-30px));
+}
+
+.fade-transform-leave-to {
+  @include transform(translateX(30px));
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  @include transition(0.5s);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  @include transform(translateX(30px));
+}
+
+.slide-right-enter-active,
+.slide-right-leave-active,
+.slide-left-enter-active,
+.slide-left-leave-active {
+  @include transition(0.5s);
+}
+
+.slide-right-enter,
+.slide-left-leave-to {
+  @include transform(translateX(-100%));
+}
+
+.slide-left-enter,
+.slide-right-leave-to {
+  @include transform(translateX(100%));
+}

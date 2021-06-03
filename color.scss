@@ -1,0 +1,147 @@
+@import "./variables.scss";
+
+.c {
+  &-white {
+    color: $white;
+  }
+
+  &-blue {
+    color: $blue;
+  }
+
+  &-green {
+    color: $green;
+  }
+
+  &-yellow {
+    color: $yellow;
+  }
+
+  &-orange {
+    color: $orange;
+  }
+
+  &-red {
+    color: $red;
+  }
+
+  &-rsm {
+    color: #e8338f;
+  }
+
+  &-33 {
+    color: $c-33;
+  }
+
+  &-66 {
+    color: #666666;
+  }
+
+  &-99 {
+    color: $c-99;
+  }
+
+  &-dd {
+    color: $c-dd;
+  }
+
+  &-ee {
+    color: $c-ee;
+  }
+
+  &-active {
+    color: $active !important;
+  }
+}
+
+.bgc {
+  &-white {
+    background-color: $white !important;
+  }
+
+  &-blue {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &-green {
+    background-color: $green;
+    color: $white;
+  }
+
+  &-green-lg {
+    background-image: $green-lg;
+    color: $white;
+  }
+
+  &-yellow {
+    background-color: $yellow;
+    color: $white;
+  }
+
+  &-yellow-lg {
+    background-image: $yellow-lg;
+    color: $white;
+  }
+
+  &-orange {
+    background-color: $orange;
+    color: $white;
+  }
+
+  &-orange-lg {
+    background-image: $orange-lg;
+    color: $white;
+  }
+
+  &-red {
+    background-color: $red;
+    color: $white;
+  }
+
+  &-rsm {
+    background-color: #e8338f;
+    color: $white;
+  }
+
+  &-33 {
+    background-color: $c-33;
+    color: $white;
+  }
+
+  &-99 {
+    background-color: $c-99;
+    color: $white;
+  }
+
+  &-dd {
+    background-color: $c-dd;
+    color: $white;
+  }
+
+  &-f5 {
+    background-color: $c-f5;
+  }
+
+  &-rgba-black {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &-rgba-white {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &-active {
+    background-color: $active;
+  }
+
+  &-disabled {
+    background-image: none;
+    background-color: $c-dd;
+    color: $white;
+  }
+
+  &-none {
+    background: none !important;
+  }
+}

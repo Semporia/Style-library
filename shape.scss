@@ -1,0 +1,56 @@
+.badge {
+  @mixin badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5upx 10upx;
+    border-radius: 5upx;
+  }
+
+  &-d {
+    @include badge;
+  }
+
+  &-c {
+    @include badge;
+    padding: 5upx 20upx;
+    border-radius: 30upx;
+  }
+
+  &-m {
+    @include badge;
+    border-radius: 0 10upx 10upx 10upx;
+  }
+
+  &-r {
+    @include badge;
+    padding: 5upx 20upx;
+    border-radius: 30upx 0 0 30upx;
+  }
+}
+
+.dot {
+  @mixin dot {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &-small {
+    @include dot;
+    width: 10upx;
+    height: 10upx;
+  }
+
+  &-medium {
+    @include dot;
+    width: 20upx;
+    height: 20upx;
+  }
+
+  &-large {
+    @include dot;
+    width: 30upx;
+    height: 30upx;
+  }
+}

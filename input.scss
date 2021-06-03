@@ -1,0 +1,84 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin name {
+  .name {
+    min-width: 120upx;
+    padding-right: 20upx;
+
+    &.required:before {
+      content: '*';
+      color: #fe6367;
+    }
+
+    &:after {
+      content: '：';
+    }
+  }
+}
+
+@mixin icon {
+  .icon {
+    font-size: 40upx;
+    padding-right: 20upx;
+  }
+}
+
+@mixin input {
+  input,
+  textarea {
+    -webkit-appearance: none;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: #999999;
+
+    &::-webkit-input-placeholder {
+      color: #999999;
+    }
+
+    &:disabled {
+      -webkit-opacity: 1;
+      -webkit-text-fill-color: #999999;
+      background-color: transparent;
+      color: #999999;
+    }
+  }
+}
+
+.input {
+  &-small {
+    @include flex;
+    @include name;
+    @include icon;
+    @include input;
+    height: 60upx;
+  }
+
+  &-medium {
+    @include flex;
+    @include name;
+    @include icon;
+    @include input;
+    height: 80upx;
+  }
+
+  &-large {
+    @include flex;
+    @include name;
+    @include icon;
+    @include input;
+    height: 90upx;
+  }
+}
+
+.textarea {
+  @include flex;
+  @include name;
+  @include icon;
+  @include input;
+  align-items: flex-start;
+}

@@ -1,0 +1,25 @@
+@mixin btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40upx;
+}
+
+.btn {
+  &-small {
+    @include btn;
+    display: inline-flex;
+    height: 60upx;
+  }
+
+  &-medium {
+    @include btn;
+    display: inline-flex;
+    height: 80upx;
+  }
+
+  &-large {
+    @include btn;
+    height: 90upx;
+  }
+}

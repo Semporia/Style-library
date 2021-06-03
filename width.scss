@@ -1,0 +1,17 @@
+// 定义宽度，历遍2-1000
+@for $i from 2 through 1000 {
+  .w-#{$i} {
+    width: $i + rpx;
+  }
+}
+
+// 定义宽度百分比，遍历1-100
+@for $i from 1 through 100 {
+  .w-#{$i}p {
+    width: $i * 1%;
+  }
+}
+
+.w-none {
+  width: auto !important;
+}

@@ -1,0 +1,150 @@
+.clearfix {
+  &:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+    clear: both;
+  }
+}
+
+.scroll {
+  &-x {
+    overflow-x: auto;
+  }
+
+  &-y {
+    overflow-y: auto;
+  }
+
+  &-none {
+    overflow: hidden;
+  }
+}
+
+.z {
+  &-small {
+    z-index: 99;
+  }
+
+  &-medium {
+    z-index: 999;
+  }
+
+  &-large {
+    z-index: 9999;
+  }
+}
+
+.f {
+  &l {
+    float: left;
+  }
+
+  &r {
+    float: right;
+  }
+}
+
+.d {
+  &b {
+    display: block !important;
+    width: 100%;
+  }
+
+  &ib {
+    display: inline-block !important;
+  }
+
+  &n {
+    display: none !important;
+  }
+}
+
+.t {
+  &al {
+    text-align: left;
+  }
+
+  &ac {
+    text-align: center;
+  }
+
+  &ar {
+    text-align: right;
+  }
+
+  &ie {
+    text-indent: 2em;
+  }
+}
+
+.toe {
+  @mixin toe {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &-1 {
+    @include toe;
+    -webkit-line-clamp: 1;
+  }
+
+  &-2 {
+    @include toe;
+    -webkit-line-clamp: 2;
+  }
+
+  &-3 {
+    @include toe;
+    -webkit-line-clamp: 3;
+  }
+
+  &-sp {
+    width: 1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+.v {
+  &at {
+    vertical-align: top;
+  }
+
+  &am {
+    vertical-align: middle;
+  }
+
+  &ab {
+    vertical-align: baseline;
+  }
+}
+
+.ws {
+  &-wrap {
+    white-space: normal;
+  }
+
+  &-none {
+    white-space: nowrap;
+  }
+}
+
+.wb {
+  &-all {
+    word-break: break-all;
+  }
+
+  &-word {
+    word-break: break-word;
+  }
+
+  &-none {
+    word-break: keep-all;
+  }
+}
